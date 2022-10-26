@@ -1,0 +1,584 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Microsoft.Management.Infrastructure/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Management.Infrastructure.Runtime.Unix": "2.0.0",
+          "Microsoft.Management.Infrastructure.Runtime.Win": "2.0.0"
+        },
+        "compile": {
+          "ref/netstandard1.6/Microsoft.Management.Infrastructure.Native.dll": {},
+          "ref/netstandard1.6/Microsoft.Management.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/_._": {}
+        }
+      },
+      "Microsoft.Management.Infrastructure.Runtime.Unix/2.0.0": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.6/Microsoft.Management.Infrastructure.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          }
+        }
+      },
+      "Microsoft.Management.Infrastructure.Runtime.Win/2.0.0": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/win-arm/lib/netstandard1.6/Microsoft.Management.Infrastructure.Native.dll": {
+            "assetType": "runtime",
+            "rid": "win-arm"
+          },
+          "runtimes/win-arm/lib/netstandard1.6/Microsoft.Management.Infrastructure.dll": {
+            "assetType": "runtime",
+            "rid": "win-arm"
+          },
+          "runtimes/win-arm/native/Microsoft.Management.Infrastructure.Native.Unmanaged.dll": {
+            "assetType": "native",
+            "rid": "win-arm"
+          },
+          "runtimes/win-arm/native/mi.dll": {
+            "assetType": "native",
+            "rid": "win-arm"
+          },
+          "runtimes/win-arm/native/miutils.dll": {
+            "assetType": "native",
+            "rid": "win-arm"
+          },
+          "runtimes/win-arm64/lib/netstandard1.6/Microsoft.Management.Infrastructure.Native.dll": {
+            "assetType": "runtime",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-arm64/lib/netstandard1.6/Microsoft.Management.Infrastructure.dll": {
+            "assetType": "runtime",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-arm64/native/Microsoft.Management.Infrastructure.Native.Unmanaged.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-arm64/native/mi.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-arm64/native/miutils.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win10-x64/lib/netstandard1.6/Microsoft.Management.Infrastructure.Native.dll": {
+            "assetType": "runtime",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x64/lib/netstandard1.6/Microsoft.Management.Infrastructure.dll": {
+            "assetType": "runtime",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x64/native/Microsoft.Management.Infrastructure.Native.Unmanaged.dll": {
+            "assetType": "native",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x64/native/mi.dll": {
+            "assetType": "native",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x64/native/miutils.dll": {
+            "assetType": "native",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x86/lib/netstandard1.6/Microsoft.Management.Infrastructure.Native.dll": {
+            "assetType": "runtime",
+            "rid": "win10-x86"
+          },
+          "runtimes/win10-x86/lib/netstandard1.6/Microsoft.Management.Infrastructure.dll": {
+            "assetType": "runtime",
+            "rid": "win10-x86"
+          },
+          "runtimes/win10-x86/native/Microsoft.Management.Infrastructure.Native.Unmanaged.dll": {
+            "assetType": "native",
+            "rid": "win10-x86"
+          },
+          "runtimes/win10-x86/native/mi.dll": {
+            "assetType": "native",
+            "rid": "win10-x86"
+          },
+          "runtimes/win10-x86/native/miutils.dll": {
+            "assetType": "native",
+            "rid": "win10-x86"
+          },
+          "runtimes/win7-x64/lib/netstandard1.6/Microsoft.Management.Infrastructure.Native.dll": {
+            "assetType": "runtime",
+            "rid": "win7-x64"
+          },
+          "runtimes/win7-x64/lib/netstandard1.6/Microsoft.Management.Infrastructure.dll": {
+            "assetType": "runtime",
+            "rid": "win7-x64"
+          },
+          "runtimes/win7-x64/native/Microsoft.Management.Infrastructure.Native.Unmanaged.dll": {
+            "assetType": "native",
+            "rid": "win7-x64"
+          },
+          "runtimes/win7-x64/native/mi.dll": {
+            "assetType": "native",
+            "rid": "win7-x64"
+          },
+          "runtimes/win7-x64/native/miutils.dll": {
+            "assetType": "native",
+            "rid": "win7-x64"
+          },
+          "runtimes/win7-x86/lib/netstandard1.6/Microsoft.Management.Infrastructure.Native.dll": {
+            "assetType": "runtime",
+            "rid": "win7-x86"
+          },
+          "runtimes/win7-x86/lib/netstandard1.6/Microsoft.Management.Infrastructure.dll": {
+            "assetType": "runtime",
+            "rid": "win7-x86"
+          },
+          "runtimes/win7-x86/native/Microsoft.Management.Infrastructure.Native.Unmanaged.dll": {
+            "assetType": "native",
+            "rid": "win7-x86"
+          },
+          "runtimes/win7-x86/native/mi.dll": {
+            "assetType": "native",
+            "rid": "win7-x86"
+          },
+          "runtimes/win7-x86/native/miutils.dll": {
+            "assetType": "native",
+            "rid": "win7-x86"
+          },
+          "runtimes/win8-x64/lib/netstandard1.6/Microsoft.Management.Infrastructure.Native.dll": {
+            "assetType": "runtime",
+            "rid": "win8-x64"
+          },
+          "runtimes/win8-x64/lib/netstandard1.6/Microsoft.Management.Infrastructure.dll": {
+            "assetType": "runtime",
+            "rid": "win8-x64"
+          },
+          "runtimes/win8-x64/native/mi.dll": {
+            "assetType": "native",
+            "rid": "win8-x64"
+          },
+          "runtimes/win8-x64/native/miutils.dll": {
+            "assetType": "native",
+            "rid": "win8-x64"
+          },
+          "runtimes/win8-x86/lib/netstandard1.6/Microsoft.Management.Infrastructure.Native.dll": {
+            "assetType": "runtime",
+            "rid": "win8-x86"
+          },
+          "runtimes/win8-x86/lib/netstandard1.6/Microsoft.Management.Infrastructure.dll": {
+            "assetType": "runtime",
+            "rid": "win8-x86"
+          },
+          "runtimes/win8-x86/native/mi.dll": {
+            "assetType": "native",
+            "rid": "win8-x86"
+          },
+          "runtimes/win8-x86/native/miutils.dll": {
+            "assetType": "native",
+            "rid": "win8-x86"
+          },
+          "runtimes/win81-x64/lib/netstandard1.6/Microsoft.Management.Infrastructure.Native.dll": {
+            "assetType": "runtime",
+            "rid": "win81-x64"
+          },
+          "runtimes/win81-x64/lib/netstandard1.6/Microsoft.Management.Infrastructure.dll": {
+            "assetType": "runtime",
+            "rid": "win81-x64"
+          },
+          "runtimes/win81-x64/native/Microsoft.Management.Infrastructure.Native.Unmanaged.dll": {
+            "assetType": "native",
+            "rid": "win81-x64"
+          },
+          "runtimes/win81-x64/native/mi.dll": {
+            "assetType": "native",
+            "rid": "win81-x64"
+          },
+          "runtimes/win81-x64/native/miutils.dll": {
+            "assetType": "native",
+            "rid": "win81-x64"
+          },
+          "runtimes/win81-x86/lib/netstandard1.6/Microsoft.Management.Infrastructure.Native.dll": {
+            "assetType": "runtime",
+            "rid": "win81-x86"
+          },
+          "runtimes/win81-x86/lib/netstandard1.6/Microsoft.Management.Infrastructure.dll": {
+            "assetType": "runtime",
+            "rid": "win81-x86"
+          },
+          "runtimes/win81-x86/native/Microsoft.Management.Infrastructure.Native.Unmanaged.dll": {
+            "assetType": "native",
+            "rid": "win81-x86"
+          },
+          "runtimes/win81-x86/native/mi.dll": {
+            "assetType": "native",
+            "rid": "win81-x86"
+          },
+          "runtimes/win81-x86/native/miutils.dll": {
+            "assetType": "native",
+            "rid": "win81-x86"
+          }
+        }
+      },
+      "System.CodeDom/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.Management/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.CodeDom": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/System.Management.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      }
+    },
+    "net6.0/win-x64": {
+      "Microsoft.Management.Infrastructure/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Management.Infrastructure.Runtime.Unix": "2.0.0",
+          "Microsoft.Management.Infrastructure.Runtime.Win": "2.0.0"
+        },
+        "compile": {
+          "ref/netstandard1.6/Microsoft.Management.Infrastructure.Native.dll": {},
+          "ref/netstandard1.6/Microsoft.Management.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/_._": {}
+        }
+      },
+      "Microsoft.Management.Infrastructure.Runtime.Unix/2.0.0": {
+        "type": "package"
+      },
+      "Microsoft.Management.Infrastructure.Runtime.Win/2.0.0": {
+        "type": "package"
+      },
+      "System.CodeDom/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.Management/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.CodeDom": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net6.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.Management.Infrastructure/2.0.0": {
+      "sha512": "IaKZRNBBv3sdrmBWd+aqwHq8cVHk/3WgWFAN/dt40MRY9rbtHiDfTTmaEN0tGTmQqGCGDo/ncntA8MvFMvcsRw==",
+      "type": "package",
+      "path": "microsoft.management.infrastructure/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.6/_._",
+        "microsoft.management.infrastructure.2.0.0.nupkg.sha512",
+        "microsoft.management.infrastructure.nuspec",
+        "ref/net451/Microsoft.Management.Infrastructure.Native.dll",
+        "ref/net451/Microsoft.Management.Infrastructure.dll",
+        "ref/netstandard1.6/Microsoft.Management.Infrastructure.Native.dll",
+        "ref/netstandard1.6/Microsoft.Management.Infrastructure.dll"
+      ]
+    },
+    "Microsoft.Management.Infrastructure.Runtime.Unix/2.0.0": {
+      "sha512": "p0lslMX5bdWLxO2P7ao+rjAMOB0LEwPYpzvdCQ2OEYgX2NxFpQ8ILvqPGnYlTAb53rT8gu5DyIol1HboHFYfxQ==",
+      "type": "package",
+      "path": "microsoft.management.infrastructure.runtime.unix/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "microsoft.management.infrastructure.runtime.unix.2.0.0.nupkg.sha512",
+        "microsoft.management.infrastructure.runtime.unix.nuspec",
+        "runtimes/unix/lib/net451/_._",
+        "runtimes/unix/lib/netstandard1.6/Microsoft.Management.Infrastructure.dll"
+      ]
+    },
+    "Microsoft.Management.Infrastructure.Runtime.Win/2.0.0": {
+      "sha512": "vjBWQeDOjgernkrOdbEgn7M70SF7hof7ORdKPSlL06Uc15+oYdth5dZju9KsgUoti/cwnkZTiwtDx/lRtay0sA==",
+      "type": "package",
+      "path": "microsoft.management.infrastructure.runtime.win/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "microsoft.management.infrastructure.runtime.win.2.0.0.nupkg.sha512",
+        "microsoft.management.infrastructure.runtime.win.nuspec",
+        "runtimes/win-arm/lib/net451/_._",
+        "runtimes/win-arm/lib/netstandard1.6/Microsoft.Management.Infrastructure.Native.dll",
+        "runtimes/win-arm/lib/netstandard1.6/Microsoft.Management.Infrastructure.dll",
+        "runtimes/win-arm/native/Microsoft.Management.Infrastructure.Native.Unmanaged.dll",
+        "runtimes/win-arm/native/mi.dll",
+        "runtimes/win-arm/native/miutils.dll",
+        "runtimes/win-arm64/lib/net451/_._",
+        "runtimes/win-arm64/lib/netstandard1.6/Microsoft.Management.Infrastructure.Native.dll",
+        "runtimes/win-arm64/lib/netstandard1.6/Microsoft.Management.Infrastructure.dll",
+        "runtimes/win-arm64/native/Microsoft.Management.Infrastructure.Native.Unmanaged.dll",
+        "runtimes/win-arm64/native/mi.dll",
+        "runtimes/win-arm64/native/miutils.dll",
+        "runtimes/win10-x64/lib/net451/Microsoft.Management.Infrastructure.Native.dll",
+        "runtimes/win10-x64/lib/net451/Microsoft.Management.Infrastructure.dll",
+        "runtimes/win10-x64/lib/netstandard1.6/Microsoft.Management.Infrastructure.Native.dll",
+        "runtimes/win10-x64/lib/netstandard1.6/Microsoft.Management.Infrastructure.dll",
+        "runtimes/win10-x64/native/Microsoft.Management.Infrastructure.Native.Unmanaged.dll",
+        "runtimes/win10-x64/native/mi.dll",
+        "runtimes/win10-x64/native/miutils.dll",
+        "runtimes/win10-x86/lib/net451/Microsoft.Management.Infrastructure.Native.dll",
+        "runtimes/win10-x86/lib/net451/Microsoft.Management.Infrastructure.dll",
+        "runtimes/win10-x86/lib/netstandard1.6/Microsoft.Management.Infrastructure.Native.dll",
+        "runtimes/win10-x86/lib/netstandard1.6/Microsoft.Management.Infrastructure.dll",
+        "runtimes/win10-x86/native/Microsoft.Management.Infrastructure.Native.Unmanaged.dll",
+        "runtimes/win10-x86/native/mi.dll",
+        "runtimes/win10-x86/native/miutils.dll",
+        "runtimes/win7-x64/lib/net451/Microsoft.Management.Infrastructure.Native.dll",
+        "runtimes/win7-x64/lib/net451/Microsoft.Management.Infrastructure.dll",
+        "runtimes/win7-x64/lib/netstandard1.6/Microsoft.Management.Infrastructure.Native.dll",
+        "runtimes/win7-x64/lib/netstandard1.6/Microsoft.Management.Infrastructure.dll",
+        "runtimes/win7-x64/native/Microsoft.Management.Infrastructure.Native.Unmanaged.dll",
+        "runtimes/win7-x64/native/mi.dll",
+        "runtimes/win7-x64/native/miutils.dll",
+        "runtimes/win7-x86/lib/net451/Microsoft.Management.Infrastructure.Native.dll",
+        "runtimes/win7-x86/lib/net451/Microsoft.Management.Infrastructure.dll",
+        "runtimes/win7-x86/lib/netstandard1.6/Microsoft.Management.Infrastructure.Native.dll",
+        "runtimes/win7-x86/lib/netstandard1.6/Microsoft.Management.Infrastructure.dll",
+        "runtimes/win7-x86/native/Microsoft.Management.Infrastructure.Native.Unmanaged.dll",
+        "runtimes/win7-x86/native/mi.dll",
+        "runtimes/win7-x86/native/miutils.dll",
+        "runtimes/win8-x64/lib/net451/Microsoft.Management.Infrastructure.Native.dll",
+        "runtimes/win8-x64/lib/net451/Microsoft.Management.Infrastructure.dll",
+        "runtimes/win8-x64/lib/netstandard1.6/Microsoft.Management.Infrastructure.Native.dll",
+        "runtimes/win8-x64/lib/netstandard1.6/Microsoft.Management.Infrastructure.dll",
+        "runtimes/win8-x64/native/mi.dll",
+        "runtimes/win8-x64/native/miutils.dll",
+        "runtimes/win8-x86/lib/net451/Microsoft.Management.Infrastructure.Native.dll",
+        "runtimes/win8-x86/lib/net451/Microsoft.Management.Infrastructure.dll",
+        "runtimes/win8-x86/lib/netstandard1.6/Microsoft.Management.Infrastructure.Native.dll",
+        "runtimes/win8-x86/lib/netstandard1.6/Microsoft.Management.Infrastructure.dll",
+        "runtimes/win8-x86/native/mi.dll",
+        "runtimes/win8-x86/native/miutils.dll",
+        "runtimes/win81-x64/lib/net451/Microsoft.Management.Infrastructure.Native.dll",
+        "runtimes/win81-x64/lib/net451/Microsoft.Management.Infrastructure.dll",
+        "runtimes/win81-x64/lib/netstandard1.6/Microsoft.Management.Infrastructure.Native.dll",
+        "runtimes/win81-x64/lib/netstandard1.6/Microsoft.Management.Infrastructure.dll",
+        "runtimes/win81-x64/native/Microsoft.Management.Infrastructure.Native.Unmanaged.dll",
+        "runtimes/win81-x64/native/mi.dll",
+        "runtimes/win81-x64/native/miutils.dll",
+        "runtimes/win81-x86/lib/net451/Microsoft.Management.Infrastructure.Native.dll",
+        "runtimes/win81-x86/lib/net451/Microsoft.Management.Infrastructure.dll",
+        "runtimes/win81-x86/lib/netstandard1.6/Microsoft.Management.Infrastructure.Native.dll",
+        "runtimes/win81-x86/lib/netstandard1.6/Microsoft.Management.Infrastructure.dll",
+        "runtimes/win81-x86/native/Microsoft.Management.Infrastructure.Native.Unmanaged.dll",
+        "runtimes/win81-x86/native/mi.dll",
+        "runtimes/win81-x86/native/miutils.dll"
+      ]
+    },
+    "System.CodeDom/6.0.0": {
+      "sha512": "CPc6tWO1LAer3IzfZufDBRL+UZQcj5uS207NHALQzP84Vp/z6wF0Aa0YZImOQY8iStY0A2zI/e3ihKNPfUm8XA==",
+      "type": "package",
+      "path": "system.codedom/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.CodeDom.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.CodeDom.dll",
+        "lib/net461/System.CodeDom.xml",
+        "lib/net6.0/System.CodeDom.dll",
+        "lib/net6.0/System.CodeDom.xml",
+        "lib/netstandard2.0/System.CodeDom.dll",
+        "lib/netstandard2.0/System.CodeDom.xml",
+        "system.codedom.6.0.0.nupkg.sha512",
+        "system.codedom.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Management/6.0.0": {
+      "sha512": "sHsESYMmPDhQuOC66h6AEOs/XowzKsbT9srMbX71TCXP58hkpn1BqBjdmKj1+DCA/WlBETX1K5WjQHwmV0Txrg==",
+      "type": "package",
+      "path": "system.management/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Management.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/_._",
+        "lib/net6.0/System.Management.dll",
+        "lib/net6.0/System.Management.xml",
+        "lib/netcoreapp3.1/System.Management.dll",
+        "lib/netcoreapp3.1/System.Management.xml",
+        "lib/netstandard2.0/System.Management.dll",
+        "lib/netstandard2.0/System.Management.xml",
+        "runtimes/win/lib/net6.0/System.Management.dll",
+        "runtimes/win/lib/net6.0/System.Management.xml",
+        "runtimes/win/lib/netcoreapp3.1/System.Management.dll",
+        "runtimes/win/lib/netcoreapp3.1/System.Management.xml",
+        "system.management.6.0.0.nupkg.sha512",
+        "system.management.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "Microsoft.Management.Infrastructure >= 2.0.0",
+      "System.Management >= 6.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\bword\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\bword\\source\\repos\\PrintShare\\PrintShare\\PrintShare.csproj",
+      "projectName": "PrintShare",
+      "projectPath": "C:\\Users\\bword\\source\\repos\\PrintShare\\PrintShare\\PrintShare.csproj",
+      "packagesPath": "C:\\Users\\bword\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\bword\\source\\repos\\PrintShare\\PrintShare\\obj\\publish\\win-x64\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\bword\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "Microsoft.Management.Infrastructure": {
+            "target": "Package",
+            "version": "[2.0.0, )"
+          },
+          "System.Management": {
+            "target": "Package",
+            "version": "[6.0.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+            "version": "[6.0.8, 6.0.8]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Runtime.win-x64",
+            "version": "[6.0.8, 6.0.8]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+            "version": "[6.0.8, 6.0.8]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win-x64": {
+        "#import": []
+      }
+    }
+  }
+}

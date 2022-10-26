@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "FZ+ggdptsr2gG9ZnZGgvAlno7+Vdz2jfFHOi9PS+GVM7Bby9gvULjQ7gWFq9s0HIq6+cTlHPNHy8RQXdqx9jLw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\bword\\source\\repos\\PrintShare\\PrintShare\\PrintShare.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bword\\.nuget\\packages\\microsoft.management.infrastructure\\2.0.0\\microsoft.management.infrastructure.2.0.0.nupkg.sha512",
+    "C:\\Users\\bword\\.nuget\\packages\\microsoft.management.infrastructure.runtime.unix\\2.0.0\\microsoft.management.infrastructure.runtime.unix.2.0.0.nupkg.sha512",
+    "C:\\Users\\bword\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\2.0.0\\microsoft.management.infrastructure.runtime.win.2.0.0.nupkg.sha512",
+    "C:\\Users\\bword\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
+    "C:\\Users\\bword\\.nuget\\packages\\system.management\\6.0.0\\system.management.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
