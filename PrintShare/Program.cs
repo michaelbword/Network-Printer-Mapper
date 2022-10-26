@@ -8,7 +8,7 @@ using (ManagementClass win32Printer = new ManagementClass("Win32_Printer"))
     {
         // Replace <server_name> and <printer_name> with the actual server and
         // printer names.
-        inputParam.SetPropertyValue("Name", "\\\\IWP10PRINT01\\BizHub C458 Quad A");
+        inputParam.SetPropertyValue("Name", "\\\\REDACTED");
 
         using (ManagementBaseObject result =
             (ManagementBaseObject)win32Printer.InvokeMethod("AddPrinterConnection", inputParam, null))
@@ -40,7 +40,7 @@ using (ManagementClass win32Printer = new ManagementClass("Win32_Printer"))
         
         Console.Write("Please wait, configuring second printer...");
 
-        inputParam.SetPropertyValue("Name", "\\\\IWP10PRINT01\\BizHub C458 Quad C");
+        inputParam.SetPropertyValue("Name", "\\\\REDACTED");
 
         using (ManagementBaseObject result =
             (ManagementBaseObject)win32Printer.InvokeMethod("AddPrinterConnection", inputParam, null))
